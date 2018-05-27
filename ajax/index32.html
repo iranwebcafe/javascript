@@ -1,0 +1,21 @@
+﻿<!-- این برنامه توسط دکتر رضا زعفرانیه تهیه شده است -->
+<!-- زبان برنامه نویسی جاوا اسکریپت  -->
+<!DOCTYPE html>
+<html>
+<body>
+<div id="divid">
+	<h1>مثالی از ایجاکس</h1>
+	<button type="button" onclick="loadFromFile()">اطلاعات  را از سرور با روش ایجاکس بخوان</button>
+</div>
+<script>
+	function loadFromFile() {
+	    var ajaxhttp = new XMLHttpRequest();
+		
+	    ajaxhttp.open("GET", "Info.txt", false);
+		ajaxhttp.send();
+		
+		document.getElementById("divid").innerHTML =  ajaxhttp.responseText;
+		 }//end of loadFromFile()
+</script>
+</body>
+</html>

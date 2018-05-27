@@ -1,0 +1,40 @@
+﻿<!-- این برنامه توسط دکتر رضا زعفرانیه تهیه شده است -->
+<!-- زبان برنامه نویسی جاوا اسکریپت  -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<header>
+			<meta charset ="utf-8" > 
+			<title>
+			      آموزش جاوا اسکریپت
+			</title>
+		</header>
+	</head>  
+	<body> 
+	      <script>
+		  // این برنامه برای مقایسه دو عدد است
+			   var payam="نمی توان مقایسه کرد";
+			   var no1= prompt("عدد اول را برای مقایسه وارد نمایید");
+			   no1= Number(no1);
+			   var no2= prompt("عدد دوم را برای مقایسه وارد نمایید");
+			   no2= Number(no2);
+			   function  compare(adad1,adad2) { //شروع فانکشن
+								if   (adad1==adad2) {
+										   payam="دو عدد برابر است";
+								 } else if (adad1>adad2) {
+										   payam="عدد اول بزرگتر است";
+										} else {
+										   payam="عدد دوم بزرگتر است";
+										 }
+							   alert(payam);
+							   return (no1+no2) ;
+							  }// پایان فانکشن
+							  
+				  if (isNaN(no1) || isNan(No2)) { //در  حساس به بزرگ بودن کاراکتر ها در زبان جاوا اسکریپت در متغیر ها و فانکشن ها
+									alert("اعداد را درست وارد نمایید");
+					   } else {	
+					   alert("جمع دو عدد برابر است با :" + compare(no1,no2));
+							   }
+		 </script>	
+     </body>
+</html>

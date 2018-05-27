@@ -1,0 +1,24 @@
+﻿<!-- این برنامه توسط دکتر رضا زعفرانیه تهیه شده است -->
+<!-- زبان برنامه نویسی جاوا اسکریپت  -->
+<!DOCTYPE html>
+<html>
+    <head>
+		<script>
+		    var reza=true;
+	        function ChangeImage() {  
+		    if (reza){
+	               document.getElementById("image").src="Salar.jpg";
+			       reza=false ;
+				   }//  end of if
+			  else  { 
+			       document.getElementById("image").src="Reza.jpg";
+			        reza=true;
+			        }//  end of else
+			 }//  end of function
+	    </script>
+	</head>
+<body>
+     <img id="image" src="Reza.jpg">
+     <button type="button" onclick="ChangeImage()">عکس را عوض کن </button>
+</body>
+</html>

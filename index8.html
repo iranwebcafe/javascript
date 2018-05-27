@@ -1,0 +1,28 @@
+﻿<!-- این برنامه توسط دکتر رضا زعفرانیه تهیه شده است -->
+<!-- زبان برنامه نویسی جاوا اسکریپت  -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<header>
+			<meta charset ="utf-8" > 
+			<title>
+			      آموزش جاوا اسکریپت
+			</title>
+			
+		</header>
+	</head>  
+<body> 
+	<p  style=" color : red ;" id = "trainer">این پاراگرافی برای یادگیری است! </p>
+	<script>
+	   var lastname= prompt("نام خانوادگی مدرس دوره چیست ؟");
+	   var  str1="این زبان توسط ";
+	   var  str2="آموزش داده خواهد شد";
+	   var  blank =" ";
+		if      (lastname!="" && lastname!=null) {
+			  document.getElementById("trainer").innerHTML=str1+ blank + lastname +blank + str2;
+		 } else {
+			  alert ('لطفا نام مدرس را وارد نمایید !');
+		  }
+	</script>	
+ </body>
+</html>
